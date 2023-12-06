@@ -1,0 +1,73 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+
+/* Normalize */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Variables de css */
+:root{
+    --star-color: #00b192;
+    --text-color: #1d1d25;
+    --primary-color: #673DE6;
+    --bg-color-100: #fafbff;
+}
+
+
+.reviews{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.reviews .review{
+    width: 360px;
+    height: 270px;
+    padding: 32px;
+    background-color: var(--bg-color-100);
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reviews .review h3{
+    font-size: 24px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.reviews .review p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    vertical-align: baseline;
+}
+
+.reviews .review .star-list-container{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews .review .star-list-container .bi-chevron-right{
+    color: var(--primary-color);
+}
+
+.star-list-container .star-list .bi-star-fill {
+    color: var(--star-color);
+    font-size: 22px;
+}
